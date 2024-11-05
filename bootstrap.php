@@ -10,7 +10,7 @@ define('__DIR__ROOT', __DIR__);
  * Initialize the load registration function
  **/
 
-$appRegister = new \Hola\Core\RegisterLoad();
+$appRegister = new \Hola\Container\RegisterLoad();
 
 /**
  *  Load the configs
