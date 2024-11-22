@@ -4,8 +4,8 @@ return [
     /**
      * connection
      */
-    "default_connection" => config_env('QUEUE_WORK', "database"),
-
+    "default" => config_env('QUEUE_WORK', "database"),
+    "default_connection" => config_env('QUEUE_CONNECTION', "database"),
     /**
      * queue key
      */

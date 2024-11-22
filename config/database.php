@@ -4,7 +4,7 @@ return [
     /**
      * connection
      */
-    "default_connection" => "mysql",
+    "default" => "mysql",
     /**
      * connection list
      */
@@ -31,12 +31,12 @@ return [
 //    ],
         "pgsql" => [
             'driver' => 'pgsql',
-            "host" => config_env('DB_HOST', 'postgres_host'),
-            "port" => config_env('DB_PORT', '5432'),
-            "db_name" => config_env('DB_NAME', 'default'),
-            "username" => config_env('DB_USERNAME', 'postgres'),
-            "password" => config_env('DB_PASSWORD', 'postgres'),
-            "options" => config_env('DB_OPTIONS',null),
+            "host" => config_env('DB_HOST_pgsql', '127.0.0.1'),
+            "port" => config_env('DB_PORT_pgsql', '5432'),
+            "db_name" => config_env('DB_NAME_pgsql', 'default'),
+            "username" => config_env('DB_USERNAME_pgsql', 'postgres'),
+            "password" => config_env('DB_PASSWORD_pgsql', 'postgres'),
+            "options" => config_env('DB_OPTIONS_pgsql',null),
         ],
 //    "pgsql_production" => [
 //        "host" => config_env('DB_HOST_PRODUCTION', 'postgres_host'),

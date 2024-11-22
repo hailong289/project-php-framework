@@ -1,12 +1,12 @@
 <?php
 const URL_PATH = 'http://localhost';
+const PROJECT_KEY='evAcrka08jQfbHznXbx5W47H6bZKJ6Jg';
 const DEBUG_LOG = true;
 const DEBUG_LOG_CONNECTION = true;
 const LANGUAGE = 'vi';
 const TIMEZONE = 'Asia/Ho_Chi_Minh';
 
 // connection db
-const DB_ENVIRONMENT = 'default';
 const DB_CONNECTION = 'mysql';
 const DB_HOST = '127.0.0.1';
 const DB_PORT = '3306';
@@ -27,6 +27,7 @@ const REDIS_PASSWORD = null;
 // end db
 
 // Rabbit MQ
+const RABBITMQ_CONNECTION = 'rabbitmq';
 const RABBITMQ_HOST = '127.0.0.1';
 const RABBITMQ_VHOST = '/';
 const RABBITMQ_PORT = '5672';
@@ -44,6 +45,7 @@ const RABBITMQ_OPTIONS = [
 
 // Queue
 const QUEUE_WORK = 'database'; // use database or redis or rabbitMQ
+const QUEUE_CONNECTION = 'database'; // name connections in config/queue.php
 const QUEUE_TIMEOUT = 600; // default timeout 10 minutes
 
 // mail
@@ -60,3 +62,5 @@ const MAIL_DEBUG = 0;
 //(3) As DEBUG_SERVER plus connection status
 //(4) Low-level data output, all messages.
 // end mail
+
+const NOT_USE_RENDER_VIEW = false;

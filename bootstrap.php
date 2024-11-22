@@ -39,6 +39,15 @@ $appRegister->routerWorkLoad();
  **/
 $appRegister->loadTimeZone();
 
+/**
+ *  Load language
+ *  If you want to use language then open this code
+ *  default language is vi with variable LANGUAGE in config/constant.php
+ *  If you want to change language then change value of LANGUAGE in config/constant.php
+ *  Example: define('LANGUAGE', 'en');
+ *  Then create file en.php in language folder
+ **/
+$appRegister->loadLanguage();
 
 /**
  *  Initialize app
