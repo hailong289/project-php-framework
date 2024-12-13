@@ -6,6 +6,9 @@ ini_set('error_reporting', E_STRICT);
 $appRegister = new \Hola\Container\RegisterLoad();
 $appRegister->loadConfig();
 $appRegister->loadTimeZone();
+$appRegister->registerFolder([
+    'database'
+]);
  // register command
 $application = new App\App();
 $application->register();

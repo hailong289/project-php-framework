@@ -8,11 +8,11 @@ const TIMEZONE = 'Asia/Ho_Chi_Minh';
 
 // connection db
 const DB_CONNECTION = 'mysql';
-const DB_HOST = '127.0.0.1';
+const DB_HOST = 'mysql_container';
 const DB_PORT = '3306';
 const DB_NAME = 'blog';
 const DB_USERNAME = 'root';
-const DB_PASSWORD = '';
+const DB_PASSWORD = '1';
 const DB_OPTIONS = [
     \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
     \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
