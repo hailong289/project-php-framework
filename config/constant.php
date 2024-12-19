@@ -62,5 +62,3 @@ const MAIL_DEBUG = 0;
 //(3) As DEBUG_SERVER plus connection status
 //(4) Low-level data output, all messages.
 // end mail
-
-const NOT_USE_RENDER_VIEW = false;
