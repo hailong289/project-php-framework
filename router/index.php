@@ -1,7 +1,8 @@
 <?php
-use Hola\Core\ConfigRouter;
-$configRouter = new ConfigRouter();
-$configRouter->add([
-    'web' => 'web',
-    'api' => 'api'
-])->work();
+use Hola\Routings\ConfigRouter;
+ConfigRouter::init()
+    ->add([
+        ['url' => '/', 'file' => 'web'],
+        ['url' => 'admin', 'file' => 'api']
+    ])
+    ->work();
