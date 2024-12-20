@@ -1,6 +1,7 @@
 <?php
 namespace App;
 use Hola\Application;
+use Hola\Core\ViewRender;
 
 class App extends Application {
 
@@ -8,6 +9,9 @@ class App extends Application {
    {
        // dependency injection
        // $this->set(\App\Repositories\Blog\BlogInterface::class, \App\Repositories\Blog\BlogRepository::class);
+       ViewRender::cacheFileHtml([
+           'welcome'
+       ]);
    }
 
 }
