@@ -1,11 +1,11 @@
 <?php
 namespace Middleware;
-use Hola\Core\Request;
-use Hola\Core\Response;
+use Hola\Transport\Request;
+use Hola\Transport\Response;
 
 class AuthMiddleware {
     // return boolean function
      public function handle(Request $request, Response $response){
-         return $response->next($request);
+         return $response::next($request);
      }
 }
