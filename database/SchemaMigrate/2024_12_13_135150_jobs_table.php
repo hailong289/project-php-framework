@@ -1,5 +1,5 @@
 <?php
-namespace App\Database\Migrations;
+namespace App\Database\SchemaMigrate;
 use Hola\Database\Structure\Table;
 use Hola\Database\Structure\DBSchema;
 use Hola\Database\TableMigration;
