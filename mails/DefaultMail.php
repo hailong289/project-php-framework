@@ -3,7 +3,9 @@ namespace Mails;
 use Hola\Mailing\MailerBuilder;
 
 class DefaultMail extends MailerBuilder {
-
+    public function __construct() {
+        parent::__construct();
+    }
     /**
      * @return string
      * Send email with title
