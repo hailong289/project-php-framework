@@ -1,15 +1,30 @@
 <?php
 namespace Mails;
-use Hola\Core\Mail;
-class DefaultMail extends Mail {
-    public function __construct()
-    {
-        parent::__construct();
+use Hola\Mailing\MailerBuilder;
+
+class DefaultMail extends MailerBuilder {
+
+    /**
+     * @return string
+     * Send email with title
+     * This function can be deleted if not used
+     */
+    public function title() {
+        return "Test mail";
+    }
+
+    /**
+     * @return string
+     * Send email with content as html string
+     * This function can be deleted if not used
+     */
+    public function view() {
+        return "<h1>Test mail</h1>";
     }
    
     public function handle()
     {
-         echo "send mail";
+        return $this->send();
     }
 
 }
