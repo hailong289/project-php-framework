@@ -18,8 +18,6 @@ const DB_OPTIONS = [
     \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
 ];
 // redis
-const REDIS_ENVIRONMENT = 'default';
-const REDIS_CONNECTION = 'redis';
 const REDIS_HOST = '127.0.0.1';
 const REDIS_PORT = '6379';
 const REDIS_USER = 'default';
@@ -42,6 +40,9 @@ const RABBITMQ_OPTIONS = [
     'passphrase' => null,
 ];
 // end Rabbit MQ
+
+// Cache
+const CACHE_STORE = 'file'; // use file or redis
 
 // Queue
 const QUEUE_WORK = 'database'; // use database or redis or rabbitMQ

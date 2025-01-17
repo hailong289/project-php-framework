@@ -3,7 +3,7 @@ return [
     /**
      * Default cache store
      */
-    'default' => 'file',
+    'default' => conval('CACHE_STORE','file'),
 
     /**
      * Default connection
